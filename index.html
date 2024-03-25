@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Video Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://fav.farm/🔥" />
+</head>
+<body>
+
+   <div class="player">
+     <video class="player__video viewer" src="./assets/videos/652333414.mp4"></video>
+
+     <div class="player__controls">
+       <div class="progress">
+        <div class="progress__filled"></div>
+       </div>
+       <button class="player__button toggle" title="Toggle Play">►</button>
+       <section class="controls">
+            <div class="sound-section">
+                <img src="./assets/icons/sound icon.svg" class="sound-icon max-volume" alt="sound" height="25px" width="25px">
+                <img src="./assets/icons/sound mute.svg" class="sound-icon mute hidden" alt="sound" height="25px" width="25px">
+                <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+            </div>
+            <div class="playback-speed">
+                <img src="./assets/icons/playback speed icon.svg" alt="playback speed" height="20px" width="20x">
+                <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+            </div>
+       </section>
+       <button data-skip="-15" class="player__button">« 15s</button>
+       <button data-skip="25" class="player__button">25s »</button>
+       <button class="fullscreen"><img src="./assets/icons/fullscreen.svg" alt="fullscreen" width="25px" height="25px"></button>
+     </div>
+   </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
